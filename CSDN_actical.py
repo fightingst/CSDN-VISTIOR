@@ -25,10 +25,11 @@ class CsdnVisitor(object):
 
 
     def visitor(self):
-
-        self.article_list.append('https://blog.csdn.net/weixin_41960890/article/details/123591436')
-        self.article_list.append('https://blog.csdn.net/weixin_41960890/article/details/120547099')
-        self.article_list.append('https://blog.csdn.net/weixin_41960890/article/details/120418801')
+        
+        # 文章链接
+        self.article_list.append('https://blog.csdn.net/****************/article/details/********')
+        self.article_list.append('https://blog.csdn.net/****************/article/details/********')
+        self.article_list.append('https://blog.csdn.net/****************/article/details/********')
 
         for article_url in self.article_list:
             response = requests.get(url=article_url, headers=self.headers)
@@ -42,7 +43,7 @@ class CsdnVisitor(object):
 
 
 def main():
-    url = "https://blog.csdn.net/weixin_41960890"  # 用于保存你的博客主页地址（根据实际情况更改）
+    url = "https://blog.csdn.net/**********"  # 用于保存你的博客主页地址（根据实际情况更改）
     page_num = 1  # 用于保存你的博客页数 （根据实际情况更改）
     visitor = CsdnVisitor(url, page_num)
     visitor.run()
