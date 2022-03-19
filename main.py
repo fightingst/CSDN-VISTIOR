@@ -55,7 +55,7 @@ class CsdnVisitor(object):
 
 
 def main():
-    url = "https://blog.csdn.net/weixin_41960890"  # 用于保存你的博客主页地址（根据实际情况更改）
+    url = "https://blog.csdn.net/*************"  # 用于保存你的博客主页地址（根据实际情况更改）
     page_num = 7  # 用于保存你的博客页数 （根据实际情况更改）
     visitor = CsdnVisitor(url, page_num)
     visitor.run()
